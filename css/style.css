@@ -15,24 +15,122 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 */
 
 /* VARIÁVEIS */
+
+html, body, header, img, figure, section, h2, ul, li, h3,
+footer, button{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
 :root{
-  
+	--bg-color: #00002e;
+	--txt-color: rgba(255, 255, 255, 0.849);
+	 
 }
 
 /*BODY*/
 	body{
+		font-family: Arial, Helvetica, sans-serif;
+		background-color: var(--bg-color);
+		margin: 0;
+	}
 
+	figcaption{
+		display: none;
+	}
+
+	#imgPerfil{
+		width: 186px;
 	}
 
 /*TOPO*/
 	header.topo{
-		
+		display: flex;
+		justify-content: left;
+		align-items: center;	
 	}
 
 /*RODAPÉ*/
 	
 
+
 /*PÁGINA INICIAL*/
 	div.pg-home{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 590px;
+	}
+
+	h2, h3{
+		color: var(--txt-color);
+	}
+	
+	h2{
+		font-size: 4em;
+	}
+
+	h3{
+		font-weight: lighter;
+	}
+
+	section{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	ul{
+		display: flex;
+		flex-direction: row;
+		width: 858px;
+		justify-content: space-evenly;
+		padding-top: 49px;
+		padding-bottom: 49px;
 		
 	}
+
+	li{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.fig-addPerfill{
+		
+		padding: 43px;
+	}
+
+	button{
+		background-color: var(--bg-color);
+		border: 2px solid var(--txt-color);
+		color: var(--txt-color);
+		width: 199px;
+    	height: 45px;
+	}
+
+	figure{
+		padding-bottom: 25px;
+	}
+
+
+@media (max-width: 800px){
+	header.topo{
+		display: flex;
+		justify-content: center;
+		align-items: center;	
+	}
+
+	ul{
+		display: flex;
+		flex-direction: row;		
+		width: 858px;
+		justify-content: space-between;
+		padding-top: 49px;
+		padding-bottom: 49px;
+		
+	}
+	
+}
