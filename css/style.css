@@ -125,12 +125,29 @@ footer, button{
 
 	ul{
 		display: flex;
-		flex-direction: row;		
-		width: 858px;
-		justify-content: space-between;
+		flex-wrap: wrap;				
+		width: 286px;
+		justify-content: space-evenly;
 		padding-top: 49px;
-		padding-bottom: 49px;
-		
+		padding-bottom: 49px;		
 	}
+
+	h2{
+		font-size: 26px;
+	}
+	li{
+		width: 50%;
+	}
+
+	#imgPerfil {
+		width: 119px;
+	}
+	
+	.fig-addPerfill {
+		padding: 7px;
+	}
+
+	
+	
 	
 }
